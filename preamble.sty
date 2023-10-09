@@ -1,0 +1,46 @@
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{color}
+\usepackage[sfdefault]{atkinson}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{anyfontsize}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{graphicx}
+\usepackage{extsizes}
+\usepackage{hyperref}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{tablefootnote}
+
+
+%ParagraphSpacing
+\setlength{\parindent}{1pt}
+
+\def\frontmatter{%
+    \pagenumbering{gobble}
+}%
+
+%PageNumbering
+
+\def\mainmatter{%
+    \pagenumbering{arabic}
+    \setcounter{page}{1}
+    \setcounter{section}{0}
+    \renewcommand{\thesection}{\arabic{section}}
+}%
+
+\def\backmatter{%
+    \setcounter{section}{0}
+    \renewcommand{\thesection}{\Alph{section}}
+}%
+
+%Line Spacing
+\fontsize{11pt}{14pt}\selectfont
+
+%PageLayout
+\usepackage{geometry}
+\geometry{a4paper, margin=30mm}
