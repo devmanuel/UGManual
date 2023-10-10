@@ -26,9 +26,9 @@ The students admitted to the UG program are expected to complete eight semesters
 
 These courses are either full semester or half-semester long. The calculation of credits for standard courses depends on whether the course involves lecture hours. For a full semester course, when the course involves lectures, the credit is computed as shown below.
 
-
-	\[Credits=L+T+floor(\frac{P}{2})\]
-
+\begin{equation}
+\mathit{Credits}=L+T+\mathit{floor}\left(\frac{P}{2}\right )
+\end{equation}
 
 If the course contains no lecture hours, the credits are calculated using the formula below.
 
@@ -36,28 +36,29 @@ If the course contains no lecture hours, the credits are calculated using the fo
 	\[Credits=L+T+ceiling(\frac{P}{2})\]
 
 
-The credit of a half-semester course is half of that of a full semester course with similar L-T-P parameters. The table below exemplifies the above procedure for various combinations of L-T-P hours.
+The credit of a half-semester course is half of that of a full semester course with similar L-T-P parameters. The \Cref{tab:credits-example} exemplifies the above procedure for various combinations of L-T-P hours.
 
-
-\begin{table}[h!]
+\begin{table}[t]
+	
+	\renewcommand{\arraystretch}{1.25} 
     \centering
-    \begin{tabular}{c c c c c c}
-    \toprule
-    \multirow{2}{*}{Sr. No.}   &  \multicolumn{3}{c}{Engagement Hours Per Week} & \multicolumn{2}{c}{Credits}\\
-    \cline{2-6}
-    {} & L (Lecture) & T (Tutorial) & P (Practical) & Half Semester & Full Semester \\
-    \midrule
-    1 & 4 & 0 & 0 & 4 & 2   \\
-    2 & 4 & 0 & 2 & 5 & 2.5 \\
-    3 & 2 & 1 & 0 & 3 & 1.5 \\
-    4 & 0 & 0 & 4 & 2 & 1   \\
-    5 & 0 & 1 & 2 & 2 & {}  \\
-    6 & 3 & 0 & 3 & 4 & {}  \\
-    7 & 0 & 0 & 3 & 2 & {} \\
+
+    \begin{tabular}{c c c c c}
+    	    \toprule
+    L (Lecture) & T (Tutorial) & P (Practical) & Credits (Full) & Credits (Half)\\
+    
+    \hline
+    \hline
+    
+     3 & 0 & 0 & 3 & 1.5   \\
+     3 & 1 & 0 & 4 & 2 \\
+     3 & 0 & 3 & 4 & 2 \\
+     3 & 0 & 2 & 4 & 2   \\
+     0 & 0 & 3 & 2 & 1  \\
     \bottomrule
     \end{tabular}
-    \caption{llustration of course credits for different L-T-P parameters}
-    \label{tab:llustration of course credits for different L-T-P parameters}
+    \caption{llustration of course credits for common L-T-P parameters}
+    \label{tab:credits-example}
 \end{table}
 
 \subsubsection{Modular Courses}
