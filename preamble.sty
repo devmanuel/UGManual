@@ -8,13 +8,20 @@
 \usepackage{setspace}
 \usepackage{parskip}
 \usepackage{graphicx}
-\usepackage{extsizes}
+%\usepackage{extsizes}
 \usepackage{hyperref}
 \usepackage{multirow}
 \usepackage{multicol}
 \usepackage{enumitem}
 \usepackage{float}
-\usepackage{tablefootnote}
+\usepackage{cleveref}
+%\usepackage{enumerate}
+\usepackage{enumitem}
+
+
+% glossary
+\usepackage{glossaries}
+\makeglossaries
 
 
 %ParagraphSpacing
@@ -25,7 +32,6 @@
 }%
 
 %PageNumbering
-
 \def\mainmatter{%
     \pagenumbering{arabic}
     \setcounter{page}{1}
@@ -39,8 +45,28 @@
 }%
 
 %Line Spacing
-\fontsize{11pt}{14pt}\selectfont
+\renewcommand{\baselinestretch}{1.15}
 
-%PageLayout
+%Table Spacing
+\renewcommand{\arraystretch}{1.25} 
+
+
+%Page Layout
 \usepackage{geometry}
 \geometry{a4paper, margin=30mm}
+
+%Enumerate Numbering
+\renewcommand{\labelenumi}{\thesubsection.\arabic{enumi}}
+\renewcommand{\labelenumii}{\thesubsection.\arabic{enumi}.\arabic{enumii}}
+
+%ColoredURL
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,     
+    urlcolor=blue
+    }
+
+%Indices
+\usepackage[T1]{fontenc}
+\usepackage{imakeidx}
+\makeindex

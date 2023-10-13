@@ -1,30 +1,22 @@
-\documentclass[a4paper]{extarticle}
+\documentclass[a4paper, 11pt]{article}
 
 \usepackage{preamble}
-\usepackage{cleveref}
-
-\title{Undergraduate Manual}
-\author{Academic Office, IIT Goa}
-
-\renewcommand{\baselinestretch}{1.15} 
-
-\makeindex
-
-
-\renewcommand*{\theenumi}{\scriptsize \thesubsubsection.\alph{enumi}}
-\renewcommand*{\theenumii}{\theenumi.\arabic{enumii}}
 
 \begin{document}
 \begin{sloppypar}
 	
 
-
 \frontmatter
 
 \include{0a FrontPage}
-\include{0b Preamble}
+\include{0b Intro}
+\include{0d Glossary}
 
 \tableofcontents
+
+\pagebreak
+
+\printglossaries
 
 \pagebreak
 
@@ -39,9 +31,13 @@
 \include{07 section}
 \include{08 section}
 
-\end{sloppypar}
+\backmatter
 
+\listoftables
+
+\pagebreak
 
 \printindex
 
+\end{sloppypar}
 \end{document}
